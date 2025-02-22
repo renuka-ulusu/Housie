@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housie Game</title>
+    <link rel="stylesheet" href="housie.css">
+</head>
+<body>
+    <h1>Housie Game</h1>
+    <label for="numPlayers">Number of Players:</label>
+    <input type="number" id="numPlayers" min="2" max="5" value="2">
+    <button onclick="startGame()">Start Game</button>
+    
+    <div class="container">
+        <div class="left-section">
+            <h2>Number Board</h2>
+            <div class="board" id="numberBoard"></div>
+            <h3 id="pickedNumber"></h3>
+            <h2 id="winner"></h2>
+        </div>
+        
+        <div class="right-section" id="playersSection">
+            <button onclick="pickNumber()">Pick a Number</button>
+        </div>
+    </div>
+    
+    <script src="housie.js"></script>
+</body>
+</html>
